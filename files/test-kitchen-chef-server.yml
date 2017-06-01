@@ -1,0 +1,6 @@
+# Use this with a Test Kitchen system setup using the `chef-server` cookbook
+api_fqdn: chef-server-tk.example.com
+client_name: pivotal
+signing_key_filename: /etc/opscode/pivotal.pem
+trusted_certs_dir: /etc/chef/trusted_certs
+count_cookbook_versions: false

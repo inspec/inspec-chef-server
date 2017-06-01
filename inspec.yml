@@ -1,8 +1,39 @@
 name: inspec-chef-server
-title: InSpec Profile
-maintainer: The Authors
-copyright: The Authors
-copyright_email: you@example.com
-license: All Rights Reserved
+title: InSpec Profile for Chef Server
+maintainer: Joshua Timberman
+copyright: Chef Software, Inc.
+copyright_email: joshua@chef.io
+license: Apache 2.0
 summary: An InSpec Compliance Profile
 version: 0.1.0
+
+# Initial testing and development of this profile is based on the
+# chef-server cookbook and its supported platforms.
+supports:
+  - os-name: ubuntu
+    release: 16.04
+  - os-name: ubuntu
+    release: 14.04
+  - os-name: ubuntu
+    release: 12.04
+  - os-name: centos
+    release: 7.3.1611
+  - os-name: centos
+    release: 6.8
+  # not yet for the PoC, but let's fill this in for now so we don't have to type it all later.
+  # - os-name: redhat
+  #   release: 7
+  # - os-name: redhat
+  #   release: 6
+  # - os-name: redhat
+  #   release: 5
+  # - os-name: centos
+  #   release: 5.0
+  # - os-name: oracle
+  #   release: 6
+  # - os-name: oracle
+  #   release: 5
+  # - os-name: suse
+  #   release: 11.4
+  # - os-name: suse
+  #   release: 12.1
