@@ -8,6 +8,8 @@ describe directory('/etc/opscode') do
 end
 
 control 'private keys' do
+  only_if { !file('/etc/opscode/chef-server.rb').content.match(/^insecure_addon_compat *false/) }
+
   desc 'Permissions of the private keys *.pem in /etc/opscode'
 
   describe file('/etc/opscode/pivotal.pem') do
